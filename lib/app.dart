@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_api_app/shimmer_card.dart';
 import 'movie_service.dart';
 import 'movie.dart';
 import 'theme.dart';
@@ -32,10 +33,10 @@ class _AppState extends State<App> {
       title: 'Movie Info',
       theme: appTheme,
       home: Scaffold(
-        appBar: AppBar(title: const Text('Movie Info')),
+        appBar: AppBar(title: Text('Movie Info')),
         body: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.all(16),
+            padding: EdgeInsets.all(16),
             child: Column(
               children: [
                 Expanded(
@@ -59,21 +60,21 @@ class _AppState extends State<App> {
                                       children: [
                                         Text(
                                           movie.title,
-                                          style: const TextStyle(
+                                          style: TextStyle(
                                             fontSize: 28,
                                             fontWeight: FontWeight.bold,
                                             color: Color.fromARGB(190, 0, 0, 0),
                                           ),
                                         ),
-                                        const SizedBox(height: 16),
+                                        SizedBox(height: 16),
                                         ClipRRect(
                                           borderRadius: BorderRadius.circular(10),
                                           child: Image.network(movie.poster),
                                         ),
-                                        const SizedBox(height: 20),
+                                        SizedBox(height: 20),
                                         Text(
                                           movie.plot,
-                                          style: const TextStyle(fontSize: 16, color: Colors.black),
+                                          style: TextStyle(fontSize: 16, color: Colors.black),
                                           textAlign: TextAlign.justify,
                                         ),
                                       ],
@@ -84,31 +85,31 @@ class _AppState extends State<App> {
                             } else if (snapshot.hasError) {
                               return Center(child: Text("${snapshot.error}"));
                             }
-                            return const Center(child: CircularProgressIndicator());
+                            return Center(child: ShimmerCard());
                           },
                         )
-                      : const Center(
+                      : Center(
                           child: Text(
                             'Search for a movie',
                             style: TextStyle(fontSize: 18, color: Colors.white70),
                           ),
                         ),
                 ),
-                const SizedBox(height: 20),
+                SizedBox(height: 20),
                 Row(
                   children: [
                     Expanded(
                       child: TextField(
                         controller: _textController,
-                        decoration: const InputDecoration(
+                        decoration: InputDecoration(
                           hintText: 'Enter movie title...',
                         ),
                       ),
                     ),
-                    const SizedBox(width: 8),
+                    SizedBox(width: 8),
                     ElevatedButton(
                       onPressed: _searchMovie,
-                      child: const Text('Search'),
+                      child: Text('Search'),
                     ),
                   ],
                 ),

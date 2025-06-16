@@ -5,14 +5,14 @@ final ThemeData appTheme = ThemeData(
     seedColor: Colors.grey,
     brightness: Brightness.dark,
   ),
-  scaffoldBackgroundColor: const Color(0xFF1E1E1E), 
+  scaffoldBackgroundColor: Color(0xFF1E1E1E), 
   cardColor: Colors.white,
-  appBarTheme: const AppBarTheme(
+  appBarTheme: AppBarTheme(
     backgroundColor: Color(0xFF2C2C2C),
     foregroundColor: Colors.white,
     elevation: 0,
   ),
-  inputDecorationTheme: const InputDecorationTheme(
+  inputDecorationTheme: InputDecorationTheme(
     filled: true,
     fillColor: Color(0xFF2C2C2C),
     border: OutlineInputBorder(),

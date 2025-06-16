@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'movie.dart';
+import 'dart:async';
 
 class MovieService {
   final String baseUrl = 'https://www.omdbapi.com/';
