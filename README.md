@@ -10,12 +10,6 @@ A sleek Flutter app that fetches and displays detailed movie information using t
 - Dark theme with custom styling
 - Uses asynchronous network calls with error handling
 
-## Screenshots
-
-![Home Screen 1](assets/screenshots/sim_1.png)
-![Home Screen Shimmer](assets/screenshots/sim_2.png)
-![Home Screen 2](assets/screenshots/sim_3.png)
-
 ## Tech Stack
 
 - **Flutter** (Dart)
@@ -28,3 +22,9 @@ A sleek Flutter app that fetches and displays detailed movie information using t
 
 - [`http`](https://pub.dev/packages/http)
 - [`shimmer`](https://pub.dev/packages/shimmer)
+
+## Screenshots
+
+![Home Screen 1](assets/screenshots/sim_1.png)
+![Home Screen Shimmer](assets/screenshots/sim_2.png)
+![Home Screen 2](assets/screenshots/sim_3.png)
