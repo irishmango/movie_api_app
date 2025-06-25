@@ -1,16 +1,30 @@
-# movie_api_app
+# Movie Info App
 
-A new Flutter project.
+A sleek Flutter app that fetches and displays detailed movie information using the OMDb API. Built with best practices in stateful widget architecture, async data handling, and custom UI components.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Search for any movie by title
+- Displays movie title, poster, and plot
+- Custom shimmer loading effect while fetching
+- Dark theme with custom styling
+- Uses asynchronous network calls with error handling
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Home Screen 1](assets/screenshots/sim_1.png)
+![Home Screen Shimmer](assets/screenshots/sim_2.png)
+![Home Screen 2](assets/screenshots/sim_3.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tech Stack
+
+- **Flutter** (Dart)
+- **OMDb API** for movie data
+- **Shimmer package** for loading animation
+- **Material Design** components
+- **HTTP package** for API requests
+
+## Packages Used
+
+- [`http`](https://pub.dev/packages/http)
+- [`shimmer`](https://pub.dev/packages/shimmer)

@@ -11,6 +11,8 @@ class MovieService {
     final url = Uri.parse('$baseUrl?apikey=$apiKey&t=$title');
     final response = await http.get(url);
 
+    await Future.delayed(Duration(seconds: 3));
+
     if (response.statusCode == 200) {
       final Map<String, dynamic> data = jsonDecode(response.body);
       if (data['Response'] == 'True') {
